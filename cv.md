@@ -10,12 +10,12 @@ My Contact Info
 - **Github:** [Yan Imaev](https://github.com/yan-imaev)
 
 Summary
-_________
+----------
 
 My goal is to become a professional front-end developer. In the past, I studied webdev on my own. At the moment, there are skills and experience in working with website development, in particular, creating a design in Photoshop in Figma, layout using Bootstrap, Flexbox and Grid, developing websites and themes on WordPress, as well as PHP and its codeigniter framework, have wrote integration with a payment system banks, website of company and with the company's internal customer accounting system. I work as a marketer and combine with webdev.
 
 Skills
-__________
+------------
 - HTML
 - CSS
 - JS(Fundamentals, JQuery), Json
@@ -28,7 +28,7 @@ __________
 - Editors: VSCode, SublimeText
 
 Code
-_________
+----------
 Create show 'Hello World'
 > 
 // Write a function "greet" that returns "hello world!"
@@ -57,12 +57,12 @@ function greet() {
 >
 
 Education
-_________
+---------
 - *Ufimsky Government Aviation Technical University, Ufa city*
   - Faculty of Economics, Department of Management and Marketing
 
 Experience
-______
+-----------
 - trade company 'Forward' - marketolog
 - freelance webdev
 - microfinance company 'Kassa one' - marketolog and webdev
