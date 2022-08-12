@@ -66,3 +66,4 @@ ______
 - trade company 'Forward' - marketolog
 - freelance webdev
 - microfinance company 'Kassa one' - marketolog and webdev
+- traffic manager in traffic arbitration team
