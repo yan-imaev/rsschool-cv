@@ -44,6 +44,7 @@ h2 {
 h3 {
     font-size: 40px;
     font-weight: 500;
+    margin: 0px;
 }
 
 h4 {
@@ -53,7 +54,8 @@ h4 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 26px;
+    margin: 0px;
 }
 
 p .medium {
@@ -70,10 +72,17 @@ p .small {
     margin: auto;
 }
 
+.wrapper__row {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 160px;
+}
+
 /* Main page */
 .main-page {
     background-color: var(--l-gray);
     position: relative;
+    margin-bottom: 160px;
 }
 
 .main-page__header {
@@ -155,5 +164,46 @@ header a:hover::after {
         transform: translateX(0%);
     } to {
         transform: translateX(-50.4%);
+    }
+}
+
+.skills__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.skills__list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+    margin: 15px;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    filter: grayscale(1);
+}
+
+.skills__list li img {
+    width: 150px;
+    height: auto;
+}
+
+.skills__list li:hover {
+    cursor: pointer;
+    animation-name: grayskale;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    filter: grayscale(0);
+}
+
+@keyframes grayskale {
+    from {
+        filter: grayscale(1)
+    } to {
+        filter: grayscale(0);
     }
 }
