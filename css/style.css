@@ -1,0 +1,159 @@
+/* Color vars */
+
+:root {
+    --o-black: #0B0C0E;
+    --d-gray: #3C3D3E;
+    --l-gray: #C7D0D9;
+    --o-white: #F4F7FA;
+}
+
+/* --- */
+
+body {
+    background-color: var(--o-white);
+    font-family: 'Neue Montreal', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--o-black);
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover {
+    color: var(--o-black);
+    text-decoration: none;
+}
+
+.head-display {
+    font-size: 150px;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 18px;
+}
+
+p .medium {
+    font-size: 16px;
+}
+
+p .small {
+    font-size: 14px;
+}
+
+.wrapper {
+    max-width: 1280px;
+    display: grid;
+    margin: auto;
+}
+
+/* Main page */
+.main-page {
+    background-color: var(--l-gray);
+    position: relative;
+}
+
+.main-page__header {
+    padding-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-page__header__logo {
+    font-weight: 500;
+    font-size: 18px;
+}
+.main-page__header__logo:hover {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.main-page__header__nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-page__header__nav li {
+    margin-right: 40px;
+}
+
+.main-page__header__nav li:last-child {
+    margin-right: 0px;
+}
+
+header a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--o-black);
+    height: 1px;
+    width: 100%;
+    animation: bttm-run 0.4s ease-out;
+}
+
+@keyframes bttm-run {
+    from {
+        width: 0%;
+    } to {
+        width: 100%;
+    }
+}
+
+.main-page__pic {
+    height: 750px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.marquee-wrapper {
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.marquee-wrapper__text {
+    color: var(--o-white);
+    white-space: nowrap;
+    animation: mrqrun 10s linear infinite;
+}
+
+.marquee-wrapper__text::after {
+    content: 'Front-End Developer - Imaev Yanish';
+    color: var(--o-white);
+}
+
+@keyframes mrqrun {
+    from {
+        transform: translateX(0%);
+    } to {
+        transform: translateX(-50.4%);
+    }
+}
