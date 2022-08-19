@@ -32,7 +32,7 @@
                             <a href="#edu">Education</a>
                         </li>
                         <li>
-                            <a href="#contact">Example of code</a>
+                            <a href="#example-of-code">Example of code</a>
                         </li>
                         <li>
                             <a href="#contact">Contact me</a>
@@ -108,17 +108,57 @@
                         <h3>Experience</h3>
                     </div>
                     <div class="wrapper__largerblock">
-                        <code>
-
-                        </code>
+                        <ul class="exp__list">
+                            <li class="exp__item">
+                                <div class="exp__item__dates">
+                                    <p class="medium">2021-2022</p>
+                                </div>
+                                <div>
+                                    <p class="exp__item__title">Traffic manager and frontend developer</p>
+                                    <p class="small">Private team of traffic arbitration</p>
+                                </div>
+                            </li>
+                            <li class="exp__item">
+                                <div class="exp__item__dates">
+                                    <p class="medium">2018-2021</p>
+                                </div>
+                                <div>
+                                    <p class="exp__item__title">Manager of Internet Marketing and fullstack developer</p>
+                                    <p class="small">Microfinancial company 'Kassa One'</p>
+                                </div>
+                            </li>
+                            <li class="exp__item">
+                                <div class="exp__item__dates">
+                                    <p class="medium">2017-2018</p>
+                                </div>
+                                <div>
+                                    <p class="exp__item__title">Product Manager</p>
+                                    <p class="small">Medialux company</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="wrapper__row">
+                <div class="wrapper__row" id="example-of-code">
                     <div class="wrapper__lesserblock">
                         <h3>Example of code</h3>
                     </div>
                     <div class="wrapper__largerblock">
-                        <p></p>
+                        <p class="small">Displaying parent and child hierarchical taxonomies in WordPress</p>
+                        <pre>
+$taxonomy = 'techs';
+$parent_terms = get_terms(['taxonomy' => $taxonomy, 'parent' => 0]);
+    foreach( $parent_terms as $term ){
+        $id_parent_term = $term->term_id;
+        $name_parent_term = $term->name;
+        <-- list terms -->
+        $child_terms = get_term_children( $id_parent_term , $taxonomy );
+        foreach ($child_terms as $child) {
+            $term = get_term_by( 'id', $child, $taxonomy );
+            <-- list children terms -->
+        }
+    }
+                        </pre>
                     </div>
                 </div>
             </div>
@@ -130,18 +170,63 @@
                         <h3>Education</h3>
                     </div>
                     <div class="wrapper__largerblock">
-                        <ul class="wrapper__list">
-
+                        <ul class="exp__list">
+                            <li class="exp__item">
+                                <div class="exp__item__dates">
+                                    <p class="medium">2018-2019</p>
+                                </div>
+                                <div>
+                                    <p class="exp__item__title">PHP, Codeigniter framework and Wordpress</p>
+                                    <p class="small">Self-study</p>
+                                </div>
+                            </li>
+                            <li class="exp__item">
+                                <div class="exp__item__dates">
+                                    <p class="medium">06.2017-08.2017</p>
+                                </div>
+                                <div>
+                                    <p class="exp__item__title">HTML, CSS and JS</p>
+                                    <p class="small">GLO Academy</p>
+                                </div>
+                            </li>
+                            <li class="exp__item">
+                                <div class="exp__item__dates">
+                                    <p class="medium">2011-2015</p>
+                                </div>
+                                <div>
+                                    <p class="exp__item__title">Marketing and managment</p>
+                                    <p class="small">Ufa State Aviation University</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contact">
         <div class="wrapper">
-            <div class="wrapper__row">
-                
+            <div class="footer__row">
+                <h3>Have something in mind? <br> let’s build it together.</h2>
+                <button class="btn-white">
+                    Get in touch
+                </button>
+            </div>
+            <div class="footer__row">
+                <p class="small">Contact me</p>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/yan-imaev">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://discordapp.com/users/440380728228970497">Discord</a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/wbdv_capo">Telegram</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </footer>
