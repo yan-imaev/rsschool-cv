@@ -1,15 +1,4 @@
-h1 {
-    font-family:  'Aleo', Arial, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-}
-
-h2 {
-    font-family: 'Magra', Arial, sans-serif;
-    font-weight: normal;
-}
-
-h3 {
-    font-family: 'Red Hat text', Arial, sans-serif;
-    font-weight: normal;
+.wrapper {
+    display: block;
+    width: 1200px;
 }
