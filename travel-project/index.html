@@ -9,114 +9,152 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+<div class="body-wrapper">
+    <img id="preview-bg" src="images/preview-bg.jpg" alt="">
     <header>
         <div class="wrapper">
-            <div class="logo">
-                <img src="images/logo.svg" alt="">
-                <span>travel portal</span>
+            <div class="flex-wrapper">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="">
+                    <span>travel portal</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">how it works</a>
+                        </li>
+                        <li>
+                            <a href="#">plan your trip</a>
+                        </li>
+                        <li>
+                            <a href="#">destinations</a>
+                        </li>
+                        <li>
+                            <a href="#">travel stories</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn btn__login">
+                    login
+                </button>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">how it works</a>
-                    </li>
-                    <li>
-                        <a href="#">plan your trip</a>
-                    </li>
-                    <li>
-                        <a href="#">destination</a>
-                    </li>
-                    <li>
-                        <a href="#">travel stories</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="btn btn__login">
-                login
-            </button>
         </div>
     </header>
     <main>
         <section class="preview">
-            <h1>Explore the beauty of the World</h1>
-            <p class="preview__desc">Receive personalized recommendations for countries, hotels, activities and more</p>
-            <div class="preview__search">
-                <input type="text" placeholder="What would you like to do?">
-                <button class="btn btn__search">start planning</button>
+            <div class="wrapper">
+                <h1>Explore the beauty of<br> the World</h1>
+                <p class="preview__desc">Receive personalized recommendations for countries, hotels, activities and more</p>
+                <div class="preview__search">
+                    <input type="text" placeholder="What would you like to do?">
+                    <button class="btn btn__search">start planning</button>
+                </div>
             </div>
         </section>
         <section class="steps">
+            <div class="wrapper">
             <h2>3 steps to the perfect trip</h2>
-            <div class="steps__list">
-                <div class="steps__item">
-                    <div class="icon"><img src="images/steps-velo.svg" alt=""></div>
-                    <p class="steps__desc">Tell us what you want to do</p>
-                </div>
-                <div class="steps__item">
-                    <div class="icon"><img src="images/steps-date.svg" alt=""></div>
-                    <p class="steps__desc">Share us preferable dates </p>
-                </div>
-                <div class="steps__item">
-                    <div class="icon"><img src="images/steps-aero.svg" alt=""></div>
-                    <p class="steps__desc">We will give you recommendations</p>
+                <div class="steps__list">
+                    <div class="steps__item">
+                        <div class="icon"><img src="images/steps-velo.svg" alt=""></div>
+                        <p class="steps__desc">Tell us what you want to do</p>
+                    </div>
+                    <div class="steps__item">
+                        <div class="icon"><img src="images/steps-date.svg" alt=""></div>
+                        <p class="steps__desc">Share us preferable dates </p>
+                    </div>
+                    <div class="steps__item">
+                        <div class="icon"><img src="images/steps-aero.svg" alt=""></div>
+                        <p class="steps__desc">We will give you recommendations</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="destination">
-            <h2>popular destination</h2>
+            <h2>popular destinations</h2>
+            <div class="slider">
+                <div class="slider__wrapper">
+                    <div class="slide-item" style="background-image: url('images/destination-one.jpg');">
+                        <span>spain</span>
+                    </div>
+                    <div class="slide-item" style="background-image: url('images/destination-two.jpg');">
+                        <span>japan</span>
+                    </div>
+                    <div class="slide-item" style="background-image: url('images/destination-three.jpg');">
+                        <span>usa</span>
+                    </div>
+                </div>
+            </div>
+            <div class="destination__nav">
+                <div class="dots">
+                    <div class="dots__item"></div>
+                    <div class="dots__item active"></div>
+                    <div class="dots__item"></div>
+                </div>
+                <button class="btn btn__stories"><img src="images/narrowsvg.svg" alt="see more travel">find more</button>
+            </div>
         </section>
         <section class="stories">
-            <h2>travel stories</h2>
-            <div class="stories__item">
-                <img src="images/storis-1.jpg" alt="">
-                <div class="stories__desc">
-                    <h3>10 Photos of Attractive Thailand</h3>
-                    <div class="stories__desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
-                    <a href="" class="stories__desc__href">Read More</a>
+            <div class="wrapper">
+                <h2>travel stories</h2>
+                <div class="stories__list">
+                    <div class="stories__item">
+                        <img src="images/storis-1.jpg" alt="travel stories 1">
+                        <div class="stories__desc">
+                            <h3>10 Photos of Attractive Thailand</h3>
+                            <div class="stories__desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                            <a href="" class="stories__desc__href">Read More</a>
+                        </div>
+                    </div>
+                    <div class="stories__item">
+                        <img src="images/storis-2.jpg" alt="travel stories 2">
+                        <div class="stories__desc">
+                            <h3>Canyonlands National Park, Utah</h3>
+                            <div class="stories__desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                            <a href="" class="stories__desc__href">Read More</a>
+                        </div>
+                    </div>
+                    <div class="stories__item">
+                        <img src="images/storis-3.jpg" alt="travel stories 3">
+                        <div class="stories__desc">
+                            <h3>I left my heart in the Mountains!</h3>
+                            <div class="stories__desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                            <a href="" class="stories__desc__href">Read More</a>
+                        </div>
+                    </div>
+                    <div class="stories__item">
+                        <img src="images/storis-4.jpg" alt="travel stories 4">
+                        <div class="stories__desc">
+                            <h3>The Longest journey in my life!</h3>
+                            <div class="stories__desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                            <a href="" class="stories__desc__href">Read More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="stories__item">
-                <img src="images/storis-2.jpg" alt="">
-                <div class="stories__desc">
-                    <h3>Canyonlands National Park, Utah</h3>
-                    <div class="stories__desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
-                    <a href="" class="stories__desc__href">Read More</a>
-                </div>
-            </div>
-            <div class="stories__item">
-                <img src="images/storis-3.jpg" alt="">
-                <div class="stories__desc">
-                    <h3>I left my heart in the Mountains!</h3>
-                    <div class="stories__desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
-                    <a href="" class="stories__desc__href">Read More</a>
-                </div>
-            </div>
-            <div class="stories__item">
-                <img src="images/storis-4.jpg" alt="">
-                <div class="stories__desc">
-                    <h3>The Longest journey in my life!</h3>
-                    <div class="stories__desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
-                    <a href="" class="stories__desc__href">Read More</a>
-                </div>
+                <button class="btn btn__stories"><img src="images/narrowsvg.svg" alt="see more travel">see more</button>
             </div>
         </section>
     </main>
     <footer>
-        <span>All Rights Reserved © Travel Portal</span>
-        <ul class="social-links">
-            <li>
-                <a href="#"><img src="images/social-inst.svg" alt=""></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/social-youtube.svg" alt=""></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/social-twitter.svg" alt=""></a>
-            </li>
-        </ul>
+        <div class="wrapper">
+            <div class="footer__info">
+                <span>All Rights Reserved © Travel Portal</span>
+                <ul class="social-links">
+                    <li>
+                        <a href="#"><img src="images/social-inst.svg" alt="social link instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/social-youtube.svg" alt="social link youtube"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/social-twitter.svg" alt="social link twitter"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
-
-    <script type="text/javascript" src="js/main.js"></script>
+    <img id="footer-bg" src="images/travel-footer-bg.jpg" alt="">
+</div>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
